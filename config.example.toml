@@ -1,0 +1,18 @@
+timezone = "Asia/Kolkata"
+origins = ["http://127.0.0.1:8000", "http://localhost:8000"]
+# Agent-side keys only. Copy approved keys here with chmod 600.
+key_directory = "~/.ssh/boardscope"
+# Capture halts explicitly at this evidence quota; no silent retention deletion.
+max_log_bytes = 268435456
+[defaults]
+command_timeout = 60
+reboot_recovery_timeout = 180
+reconnect_limits = 8
+uart_log_capture = true
+# default_suite = "saved-suite-id"
+[ai]
+enabled = false
+# Explicit local/private OpenAI-compatible endpoint, preinstalled model only.
+# endpoint = "http://127.0.0.1:11434/v1"
+# model = "your-installed-model"
+# max_tokens = 512
